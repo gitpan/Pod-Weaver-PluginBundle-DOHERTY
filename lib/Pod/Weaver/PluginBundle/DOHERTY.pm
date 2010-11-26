@@ -3,7 +3,7 @@ use warnings;
 
 package Pod::Weaver::PluginBundle::DOHERTY;
 BEGIN {
-  $Pod::Weaver::PluginBundle::DOHERTY::VERSION = '0.001';
+  $Pod::Weaver::PluginBundle::DOHERTY::VERSION = '0.002';
 }
 # ABSTRACT: Pod::Weaver configuration the way DOHERTY does it
 
@@ -27,6 +27,7 @@ sub mvp_bundle_config {
         [ 'SYNOPSIS',                       _exp('Generic'),            {} ],
         [ 'DESCRIPTION',                    _exp('Generic'),            {} ],
         [ 'OVERVIEW',                       _exp('Generic'),            {} ],
+        [ 'OPTIONS',                        _exp('Generic'),            {} ],
 
         [ 'METHODS',                        _exp('Generic'),            {} ],
         [ 'FUNCTIONS',                      _exp('Generic'),            {} ],
@@ -36,6 +37,7 @@ sub mvp_bundle_config {
         [ '@DOHERTY/Availability',          _exp('Availability'),       {} ],
         [ '@DOHERTY/SourceGitHub',          _exp('SourceGitHub'),       {} ],
         [ '@DOHERTY/BugsAndLimitations',    _exp('BugsAndLimitations'), {} ],
+        [ 'CREDITS',                        _exp('Generic'),            {} ],
         [ '@DOHERTY/Authors',               _exp('Authors'),            {} ],
         [ '@DOHERTY/Legal',                 _exp('Legal'),              {} ],
     );
@@ -55,7 +57,7 @@ Pod::Weaver::PluginBundle::DOHERTY - Pod::Weaver configuration the way DOHERTY d
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =for Pod::Coverage mvp_bundle_config
 
@@ -65,8 +67,8 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/Pod-Weaver-PluginBundle-DOHERTY/>.
 
-The development version lives at L<http://github.com/doherty/Pod-Weaver-PluginBundle-DOHERTY>
-and may be cloned from L<git://github.com/doherty/Pod-Weaver-PluginBundle-DOHERTY>.
+The development version lives at L<http://github.com/doherty/Pod-Weaver-PluginBundle-DOHERTY.git>
+and may be cloned from L<git://github.com/doherty/Pod-Weaver-PluginBundle-DOHERTY.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.
 
