@@ -3,15 +3,15 @@ use warnings;
 
 package Pod::Weaver::PluginBundle::DOHERTY;
 BEGIN {
-  $Pod::Weaver::PluginBundle::DOHERTY::VERSION = '0.002';
+  $Pod::Weaver::PluginBundle::DOHERTY::VERSION = '0.003';
 }
 # ABSTRACT: Pod::Weaver configuration the way DOHERTY does it
 
 # Dependencies
 use Pod::Weaver::Plugin::Encoding                       qw();
-use Pod::Weaver::Section::Availability 1.102570         qw();
+use Pod::Weaver::Section::Availability       1.102570   qw(); # To set github URLs properly: https://rt.cpan.org/Ticket/Display.html?id=63364
 use Pod::Weaver::Section::SourceGitHub 0.53             qw();
-use Pod::Weaver::Section::BugsAndLimitations 1.102670   qw(); # To read the bugtracker properly
+use Pod::Weaver::Section::BugsAndLimitations 1.102670   qw(); # To read the bugtracker properly: https://rt.cpan.org/Ticket/Display.html?id=61605
 
 use Pod::Weaver::Config::Assembler;
 
@@ -57,7 +57,7 @@ Pod::Weaver::PluginBundle::DOHERTY - Pod::Weaver configuration the way DOHERTY d
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =for Pod::Coverage mvp_bundle_config
 
@@ -67,7 +67,7 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/Pod-Weaver-PluginBundle-DOHERTY/>.
 
-The development version lives at L<http://github.com/doherty/Pod-Weaver-PluginBundle-DOHERTY.git>
+The development version lives at L<http://github.com/doherty/Pod-Weaver-PluginBundle-DOHERTY>
 and may be cloned from L<git://github.com/doherty/Pod-Weaver-PluginBundle-DOHERTY.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.

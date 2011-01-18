@@ -30,7 +30,7 @@ my %WriteMakefileArgs = (
     'Pod::Weaver::Section::BugsAndLimitations' => '1.102670',
     'Pod::Weaver::Section::SourceGitHub' => '0.53'
   },
-  'VERSION' => '0.002',
+  'VERSION' => '0.003',
   'test' => {
     'TESTS' => 't/*.t'
   }
